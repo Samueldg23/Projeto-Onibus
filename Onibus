@@ -1,0 +1,40 @@
+import java.lang.reflect.Array;
+
+public class Onibus {
+    private Assentos lugares[] = new Array Assentos [];
+    private String origem;
+    private String destino;
+
+        public String imprimirPaasageiros(){
+            String lista = "";
+            for (int cont = 0; cont < this.lugares.length; cont++) {
+                lista += "O passageiro" + lugares[cont].getCliente().getNome() + "assento" + (cont +1) + "\n";
+            }
+            return lista;
+        }
+
+        public Assentos[] getLugares() {
+            return lugares;
+        }
+
+        public void setLugares(Assentos[] lugares) {
+            this.lugares = lugares;
+        }
+
+        public String getOrigem() {
+            return origem;
+        }
+
+        public void setOrigem(String origem) {
+            this.origem = origem;
+        }
+
+        public String getDestino() {
+            return destino;
+        }
+
+        public void setDestino(String destino) {
+            this.destino = destino;
+        }
+        
+}
