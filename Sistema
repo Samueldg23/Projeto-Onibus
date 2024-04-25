@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Sistema{
+    private Viagem viagens[] = new Viagem[];
+
+    public void adicionarViagem(Viagem viagem) {
+        viagens.add(viagem);
+    }
+
+    public void exibirViagens() {
+        for (Viagem viagem : viagens) {
+            System.out.println("Número do ônibus: " + viagem.numeroOnibus);
+            System.out.println("Origem: " + viagem.origem);
+            System.out.println("Destino: " + viagem.destino);
+            System.out.println("Horário de partida: " + viagem.horarioPartida);
+            System.out.println("Horário de chegada: " + viagem.horarioChegada);
+            System.out.println("Máximo de passageiros: " + viagem.maxPassageiros);
+            System.out.println("Número atual de passageiros: " + viagem.passageiros.size());
+            System.out.println("-------------------------");
+        }
+    }
+}
