@@ -1,0 +1,8 @@
+public class Principal {
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente(null, 0, null, null, null);
+        cliente.setId(1);
+        cliente.setNome("Samuel");
+        System.out.println("código: " + cliente.getId() + " nome: " + cliente.getNome() );
+    }
+}
